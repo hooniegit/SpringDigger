@@ -11,6 +11,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
+	<packaging>pom</packaging>
+
 	<groupId>com.hooniegit</groupId>
 	<artifactId>SpringDigger</artifactId>
 	<version>0.1.0</version>
