@@ -1,0 +1,16 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.hooniegit</groupId>
+        <artifactId>SpringDigger</artifactId>
+        <version>0.1.0</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>Sample</artifactId>
+
+    <dependencies>
+    </dependencies>
+
+</project>
