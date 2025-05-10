@@ -1,15 +1,17 @@
 package com.hooniegit.Sample;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.UUID;
 
+
 @Getter @AllArgsConstructor
 public class Coffee {
 
-    // 재선언 불가능 final 필드 :: 변경자 없음
     private final String id;
 
     // 재선언 가능 필드
