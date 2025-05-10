@@ -1,8 +1,14 @@
 package com.hooniegit.Entity;
 
+import com.hooniegit.Entity.Configurations.Droid;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
+@ConfigurationPropertiesScan
 @SpringBootApplication
 public class SampleApplication {
 
@@ -16,6 +22,16 @@ public class SampleApplication {
      */
     public static void main(String[] args) {
         SpringApplication.run(SampleApplication.class, args);
+    }
+
+    /**
+     *
+     * @return
+     */
+    @Bean
+    @ConfigurationProperties(prefix = "droid")
+    Droid createDroid() {
+        return new Droid();
     }
 
 }
