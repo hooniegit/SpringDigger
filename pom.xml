@@ -41,6 +41,7 @@
 		<module>service/sample</module>
 		<module>service/entity</module>
 		<module>service/redis</module>
+		<module>service/mssql</module>
 	</modules>
 
 	<build>

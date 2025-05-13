@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/greeting")
 public class GreetingController {
 
-    // Value 어노테이션으로 데이터 호출
     @Value("${greeting.name: Mirage}")
     private String name;
 
@@ -27,7 +26,6 @@ public class GreetingController {
         return this.coffee;
     }
 
-    // ConfigurationProperties 기반 클래스로 데이터 호출
     private final Greeting greeting;
 
     public GreetingController(Greeting greeting) {

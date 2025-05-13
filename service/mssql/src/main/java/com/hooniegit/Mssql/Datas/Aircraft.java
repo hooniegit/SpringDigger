@@ -1,22 +1,25 @@
-package com.hooniegit.Redis.Datas;
+package com.hooniegit.Mssql.Datas;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.redis.core.RedisHash;
+
 import java.time.Instant;
 
-@RedisHash
+@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Aircraft {
 
-    @Id
+    @Id // jakarta.persistence.Id
+    @GeneratedValue // DB 엔진에서 식별자 생성
     private Long id;
 
     private String callsign, squawk, reg, flightno, route, type, category;

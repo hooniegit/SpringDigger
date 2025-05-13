@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://workspace:1433;databaseName=aircraft;encrypt=true;trustServerCertificate=true;
+    username: sa
+    password: !@34qwer
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # 또는 validate/create 등으로 조정
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+        format_sql: true
+    show-sql: true
